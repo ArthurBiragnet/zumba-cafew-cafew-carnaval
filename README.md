@@ -3,6 +3,10 @@ A game for NLPF - qui fait : Zumba Cafew Cafew Carnaval
 
 A video game with three.js
 
+**NOTES**
+\
+40 peut etre plus efficace avec un thé le matin et avec des coordonnées latitude longitude comme sur GoogleMaps
+
 **RULES**
 - Finish the TO DO list :)
 - You can update the index.html file and all the files inside the game repository
