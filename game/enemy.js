@@ -67,9 +67,4 @@ Enemy.prototype.move = function () {
 
     this.graphic.position.x = this.position.x;
     this.graphic.position.y = this.position.y;
-
-
-    light1.position.x = this.position.x;
-    light1.position.y = this.position.y;
-    //lightlight1.position.z = this.graphic.position.z + 500;
 };
