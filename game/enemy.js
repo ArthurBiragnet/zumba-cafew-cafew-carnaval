@@ -5,7 +5,7 @@ var Enemy = function(name, color, position, direction) {
     this.life = 3;
     this.bullets = new Array();
     this.direction = direction;
-    this.speed = 5;
+    this.speed = 1;
 
 
     this.material = new THREE.MeshLambertMaterial({
