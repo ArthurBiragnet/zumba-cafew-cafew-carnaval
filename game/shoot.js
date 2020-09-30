@@ -72,6 +72,23 @@ function player_collision()
 
 }
 
+function enemy_collision()
+{
+    //collision between player and walls
+    var x = enemy1.graphic.position.x + WIDTH / 2;
+    var y = enemy1.graphic.position.y + HEIGHT / 2;
+
+    if ( x < 0 )
+        enemy1.graphic.position.x -= x;
+    if ( x > WIDTH )
+        enemy1.graphic.position.x -= x - WIDTH;
+    if ( y < 0 )
+        enemy1.graphic.position.y -= y;
+    if ( y > HEIGHT )
+        enemy1.graphic.position.y -= y - HEIGHT;
+
+}
+
 function player_falling()
 {
     var nb_tile = 10;
@@ -84,14 +101,12 @@ function player_falling()
 
     for (var i = 0; i < length; i++) {
         element = noGround[i];
-        if (!element[i] === null) {
 
-            var tileX = (element[0]) | 0;
-            var tileY = (element[1]) | 0;
-            var mtileX = (element[0] + sizeOfTileX) | 0;
-            var mtileY = (element[1] + sizeOfTileY) | 0;
+        var tileX = (element[0]) | 0;
+        var tileY = (element[1]) | 0;
+        var mtileX = (element[0] + sizeOfTileX) | 0;
+        var mtileY = (element[1] + sizeOfTileY) | 0;
 
-        }
         if ((x > tileX)
             && (x < mtileX)
             && (y > tileY)
